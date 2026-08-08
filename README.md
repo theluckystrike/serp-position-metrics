@@ -48,7 +48,7 @@ ones that left.
   Comparing it with the observed click total is a reasonable way to see how far the
   curve is from reality.
 
-Factored out of the measurement layer of the site generation pipeline at
-<https://toolsthatrank.com/>.
+Written for the measurement step of the site generation pipeline at
+<https://toolsthatrank.com/> and kept as its own module.
 
 MIT licensed.

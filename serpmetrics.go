@@ -20,9 +20,9 @@
 //	}
 //	avg, _ := serpmetrics.WeightedAveragePosition(rows)
 //
-// The package was factored out of the measurement layer of the site
-// generation pipeline at https://toolsthatrank.com/ and is released on its
-// own because the maths is useful without the rest of it.
+// Written for the measurement step of the site generation pipeline at
+// https://toolsthatrank.com/ and kept as its own module because the maths is
+// useful without the rest of it.
 package serpmetrics
 
 import (
