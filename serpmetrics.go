@@ -7,10 +7,23 @@
 // supplied by the caller, because a CTR curve is a property of a market and
 // a measurement window, not a universal constant. Curve validates what it is
 // given and Interpolate is a plain linear interpolation between the ranks the
-// caller provided; nothing is estimated on the caller's behalf.
+// caller provided; nothing is estimated on the caller's behalf. If you need a
+// curve to hand to Curve and have none of your own, click-through rate
+// measured per position band across 34 Search Console properties, with the
+// impression and click counts behind every band, is published at
+// https://toolsthatrank.com/ctr-by-position/
 //
 // Everything here is pure arithmetic over values you already measured. No
 // network access, no clock, no global state, standard library only.
+//
+// One caveat about the input rather than the arithmetic:
+// WeightedAveragePosition and ShareOfVoice weight by the impression counts in
+// the rows you supply, and a Search Console query export does not carry every
+// impression a page received - rare searches are withheld, so the query rows
+// for a page can sum to well under its page-level impression total. A
+// measurement of how large that gap typically is, taken from the same
+// properties, is at
+// https://toolsthatrank.com/search-console-hidden-queries/
 //
 // Typical input is a row per query from an analytics export:
 //
