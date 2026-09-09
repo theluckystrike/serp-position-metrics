@@ -13,6 +13,12 @@
 // impression and click counts behind every band, is published at
 // https://toolsthatrank.com/ctr-by-position/
 //
+// ProjectedClicks is an expectation, and the commonest way a real page falls
+// short of it is not a wrong curve but too few impressions for any curve to
+// act on. How often a page with zero clicks turns out to be an impressions
+// problem rather than a position problem, measured across Search Console
+// exports, is at https://toolsthatrank.com/zero-click-pages/
+//
 // Everything here is pure arithmetic over values you already measured. No
 // network access, no clock, no global state, standard library only.
 //
