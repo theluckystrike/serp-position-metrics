@@ -31,6 +31,14 @@
 // properties, is at
 // https://toolsthatrank.com/search-console-hidden-queries/
 //
+// WeightedAveragePosition is the figure Search Console itself reports as
+// average position: each row's position counts once per impression, not once
+// per row. The plain mean of the same rows is usually a very different
+// number, because the long tail of rarely shown queries sits deep in the
+// results. A browser calculator that takes a pasted Queries export and shows
+// both averages side by side, with a measured cohort for comparison, is at
+// https://toolsthatrank.com/search-console-average-position/
+//
 // Typical input is a row per query from an analytics export:
 //
 //	rows := []serpmetrics.Row{
